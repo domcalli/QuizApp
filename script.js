@@ -174,16 +174,7 @@ function displayQuestion(question) {
     });
     allAnswersElm.appendChild(answerElm);
   }
-  // question.answers;
-  // question.correctAnswer;
 }
-
-// button next to each question(radio? checkbox?)
-// when you click an answer button - it tells you if you're right.
-// button to go to the next question
-// it shows the "next question" button. function showUp();
-
-// clear function current question elements
 
 function clearQuestion() {
   questionElm.innerText = "";
@@ -207,15 +198,3 @@ function endQuiz() {
   }
   retakeBtn.style.display = "block";
 }
-
-// add function in next question elements
-//
-
-// button.addEventlistener(checkAnswer())
-// modal - pop up/ in page html element
-// let answerMessage;
-
-// answer is an object --  score? win/lose?
-
-// win/lose? message
-// 7/10 to win
