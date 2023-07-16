@@ -191,7 +191,7 @@ function clearHighlight() {
 
 function endQuiz() {
   title.innerText = "You've finished!";
-  if (score >= 7) {
+  if (score <= 7) {
     questionElm.innerText = `You FAILED!\nYou scored ${score}/10`;
   } else {
     `You SURVIVED!\nYou scored ${score}/10`;
