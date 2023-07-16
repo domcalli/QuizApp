@@ -193,8 +193,10 @@ function endQuiz() {
   title.innerText = "You've finished!";
   if (score <= 7) {
     questionElm.innerText = `You FAILED!\nYou scored ${score}/10`;
+    console.log(questionElm);
   } else {
-    `You SURVIVED!\nYou scored ${score}/10`;
+    questionElm.innerText = `You SURVIVED!\nYou scored ${score}/10`;
+    console.log(questionElm);
   }
   retakeBtn.style.display = "block";
 }
