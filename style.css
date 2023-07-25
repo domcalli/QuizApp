@@ -47,13 +47,11 @@ body {
   border-radius: 7px;
 }
 #begin-btn {
-  display: none;
   padding: 0.7rem;
   background: #52080d;
   color: #e7e0e0;
   border: none;
   border-radius: 3px;
-  display: none;
   font-family: shloprg;
   font-size: 30px;
   letter-spacing: 2.5px;
