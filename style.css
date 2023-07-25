@@ -1,3 +1,8 @@
+@font-face {
+  font-family: shloprg;
+  src: url(shloprg.otf);
+}
+
 *,
 body {
   font-family: sans-serif;
@@ -6,14 +11,19 @@ body {
 }
 
 #title {
-  border: 1px solid black;
+  margin-top: 30px;
   text-align: center;
+  font-family: shloprg;
+  font-size: xxx-large;
+  color: #52080d;
+  letter-spacing: 1.5px;
 }
 #question-container {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   border: 1px solid black;
+  background-color: rgb(161, 158, 158);
   height: 60vh;
   width: 90vw;
   text-align: center;
@@ -21,13 +31,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 30px auto;
 
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 #answers div {
   cursor: pointer;
-  border: 1px solid darkred;
+  border: 1px solid #52080d;
+  /* background-color: antiquewhite; */
   margin-bottom: 15px;
   margin-left: 50px;
   margin-right: 50px;
@@ -35,19 +47,58 @@ body {
   border-radius: 7px;
 }
 #begin-btn {
-  width: 60px;
+  display: none;
+  padding: 0.7rem;
+  background: #52080d;
+  color: #e7e0e0;
+  border: none;
+  border-radius: 3px;
+  display: none;
+  font-family: shloprg;
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  width: 125px;
 }
+
+#begin-btn:hover {
+  background: #9b1e26;
+}
+
+#begin-btn:active {
+  background: #52080d;
+}
+
 #next-btn {
+  font-family: shloprg;
+  font-size: 30px;
+  letter-spacing: 2.5px;
   width: 50px;
   display: none;
+  background: #52080d;
+  color: #e7e0e0;
+  border-radius: 3px;
+  width: 80px;
+  height: 40px;
 }
 
 .highlight {
-  background-color: yellow;
+  background-color: rgb(94, 10, 10);
+  color: #e7e0e0;
+  border: 7px solid #52080d;
 }
 
 #retake-btn {
   display: none;
+  font-family: shloprg;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  width: 50px;
+  display: none;
+  background: #52080d;
+  color: #e7e0e0;
+  border-radius: 3px;
+  width: 135px;
+  height: 50px;
 }
 
 #score {
